@@ -1,0 +1,32 @@
+em0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
+	options=9b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM>
+	ether 00:50:56:b3:cd:14
+	hwaddr 00:50:56:b3:cd:14
+	inet6 fe80::250:56ff:feb3:cd14%em0 prefixlen 64 scopeid 0x1
+	inet 10.0.17.105 netmask 0xffffff00 broadcast 10.0.17.255
+	nd6 options=23<PERFORMNUD,ACCEPT_RTADV,AUTO_LINKLOCAL>
+	media: Ethernet autoselect (1000baseT <full-duplex>)
+	status: active
+em1: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
+	options=9b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM>
+	ether 00:50:56:b3:c2:58
+	hwaddr 00:50:56:b3:c2:58
+	inet6 fe80::1:1%em1 prefixlen 64 scopeid 0x2
+	inet 10.0.5.2 netmask 0xffffff00 broadcast 10.0.5.255
+	nd6 options=21<PERFORMNUD,AUTO_LINKLOCAL>
+	media: Ethernet autoselect (1000baseT <full-duplex>)
+	status: active
+lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> metric 0 mtu 16384
+	options=680003<RXCSUM,TXCSUM,LINKSTATE,RXCSUM_IPV6,TXCSUM_IPV6>
+	inet6 ::1 prefixlen 128
+	inet6 fe80::1%lo0 prefixlen 64 scopeid 0x3
+	inet 127.0.0.1 netmask 0xff000000
+	nd6 options=21<PERFORMNUD,AUTO_LINKLOCAL>
+	groups: lo
+enc0: flags=0<> metric 0 mtu 1536
+	nd6 options=21<PERFORMNUD,AUTO_LINKLOCAL>
+	groups: enc
+pfsync0: flags=0<> metric 0 mtu 1500
+	groups: pfsync
+pflog0: flags=100<PROMISC> metric 0 mtu 33160
+	groups: pflog
